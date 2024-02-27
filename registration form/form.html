@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+   </head>
+<body>
+    <section class="container">
+        <h1>Registration Form</h1>
+        <form action="">
+            <div class="name-input">
+                <div class="first">
+                    <label for="firstName" class="first-Name">First Name</label>
+                    <input type="text" placeholder="First Name" name="firstName" id="firstName">
+                    <p class="pargraph"></p>
+                    <span class="error-message"></span>
+                </div>
+                <div class="last">
+                    <label for="lastName" class="last-Name">last Name</label>
+                    <input type="text" placeholder="last Name" name="lastName" id="lastName">
+                    <span class="error-message"></span>
+                </div>
+            </div>
+
+            <div class="Number">
+                <label for="Number">Mobile Number</label>
+                <div class="country">
+                    <input type="text" placeholder="Mobile Number" name="mobileNumber" id="Number">
+                </div>
+            </div>
+
+            <div class="name-input">
+                <div class="first pass">
+                    <label for="Password" class="first-Name">Password</label>
+                    <input type="text" placeholder="Password" name="Password" id="Password">
+                </div>
+                <div class="last conf-pass">
+                    <label for="confirmpassword" class="last-Name">Confirm Password</label>
+                    <input type="text" placeholder="Confirm Password" name="confirmpassword" id="confirmpassword">
+                </div>
+            </div>
+
+           <div class="btn">
+            <span>if your have Account <a href="#">log in</a></span>
+            <button class="button">Next</button>
+           </div>
+        </form>
+    </section>
+    <script src="form.js"></script>
+</body>
+</html>
