@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.5s linear;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* background-color: black; */
+    /* height: 500rem; */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    background-color: brown;
+    height: 10rem;
+    box-shadow: 5px 5px 5px rgba(210, 48, 48, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+
+
+header .logo{
+    width: 10rem;
+    height: 7rem;
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 70%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.navbar .navbar-list{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 40%;
+}
+
+.navbar-list li a{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.navbar-list li a:hover{
+    color: rgb(246, 12, 12);
+    border-bottom: 1px solid rgb(245, 6, 6);
+    padding-bottom: 0.5rem;
+}
+
+header .menu{
+    display: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.details{
+    /* border: 1px solid red; */
+    background-image: linear-gradient(to top, #000000 60%, #a52a2a);
+    /* height: 90vh; */
+    padding-bottom: 5rem;
+}
+
+.details .us{
+    font-size: 10rem;
+    text-align: center;
+    padding: 10rem 0;
+    color: white;
+}
+
+.details .contact{
+    /* border: 1px solid rgb(12, 236, 91); */
+    text-align: center;
+    margin: 5rem 2rem;
+}
+
+.details .contact h1{
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.details .contact h1 span{
+    color: brown;
+}
+
+.contact p{
+    font-size: 3rem;
+    color: gray;
+}
+
+
+.ankit {
+    /* border: 10px solid green; */
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(10rem, 40rem));
+    gap: 2rem;
+    margin: 5rem 2rem;
+}
+
+.ankit div {
+    height: 15rem;
+}
+
+.ankit .a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid gray;
+    border-radius: 2rem;
+    padding: 2rem;
+    height: 20rem;
+    cursor: pointer;
+}
+
+.ankit .a:hover{
+    background-color: brown;
+    transform: translateY(-10px);
+}
+
+.ankit .a i{
+    font-size: 3rem;
+    padding-bottom: 0.5rem;
+    color: rgb(237, 7, 7);
+}
+
+.ankit .a h1{
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+.ankit .a span{
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+
+
+
+
+
+.yadav{
+    /* border: 1px solid yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    height: 70rem;
+}
+
+.yadav .touch{
+    color: white;
+    text-align: center;
+    padding-bottom: 5rem;
+    font-size: 5rem;
+}
+
+.yadav .touch span{
+    color: red;
+}
+
+.container{
+    /* border: 2px solid white; */
+    width: 60rem;
+    height: min-content;
+    padding: 2rem;
+    border-radius: 2rem;
+    /* border: none; */
+    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); */
+    margin: 0 .5rem;
+    /* background-color: white; */
+    box-shadow: 0 0 100px white;
+}
+
+.container h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+.container .name-input{
+    /* border: 1px solid black; */
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container .name-input .first,
+.container .name-input .last{
+    /* border: 1px solid rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.name-input .first .first-Name,
+.name-input .last .last-Name,
+form .Number,form .email{
+    font-size: 2rem;
+    color: white;
+}
+
+.name-input .first {
+    margin-right: 1rem;
+}
+
+input{
+    margin-top: 0.5rem;
+    padding: 2rem;
+    border: none;
+    box-shadow: 0 0 20px white;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    background-color: #000000;
+    /* border: 2px solid gray; */
+    color: white;
+}
+input:focus{
+    border: none;
+    outline: none;
+}
+
+.name-input input{
+    min-width: 0;
+    width: 100%;
+    transition: flex-basis 0.3s ease-in-out;
+}
+
+form .Number{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+form #Number{
+    width: 100%;
+}
+
+.or{
+    margin-top: 1.2rem;
+    color: white;
+}
+
+form .email{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+form #email{
+    width: 100%;
+}
+
+.btn{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.btn span{
+    font-size: 2rem;
+    font-weight: 400;
+}
+.btn span a{
+    font-size: 3rem;
+}
+
+button{
+    padding: 0.5rem 2rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.error-message{
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: red;
+}
+
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 11, 11); 
+    border-radius: 5px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: gray; 
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px) {
+    .ankit {
+        grid-template-columns: repeat(2, minmax(10rem, 30rem));
+    }
+
+    .ankit .d {
+        grid-column: span 2; /* The "d" div will span two columns */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .ankit {
+        grid-template-columns: minmax(10rem, 30rem);
+    }
+
+    .ankit .a
+     {
+        grid-column: 1; /* All divs will occupy a single column */
+    }
+
+    .details .us{
+        font-size: 5rem;
+    }
+
+    .details .contact h1{
+        font-size: 3.5rem;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .container{
+        max-width: 40rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px){
+    .navbar{
+        border: 1px solid red;
+    }
+
+    header{
+        position: relative;
+        padding: 0 5rem;
+    }
+
+    .navbar{
+        position: absolute;
+        background-color: rgb(249, 10, 10);
+        top: 100%;
+        right: 0;
+        height: 80vh;
+        width: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar .navbar-list{
+        flex-direction: column;
+        align-items: center;
+        top: 10%;
+        gap: 5rem;
+    }
+
+    header .menu{
+        display: inline-block;
+        font-size: 2.5rem;
+        border: 1px solid white;
+        padding: 0.5rem;
+    }
+
+    .fa-times{
+        font-size: 3rem;
+    }
+}

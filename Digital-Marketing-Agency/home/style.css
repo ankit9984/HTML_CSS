@@ -1,0 +1,740 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.5s linear;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* background-color: black; */
+    /* height: 500rem; */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    background-color: black;
+    height: 10rem;
+    /* border: 1px solid white; */
+    box-shadow: 5px 5px 5px rgba(210, 48, 48, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+
+
+header .logo{
+    width: 10rem;
+    height: 7rem;
+    /* border: 1px solid red; */
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 70%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.navbar .navbar-list{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 40%;
+}
+
+.navbar-list li a{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.navbar-list li a:hover{
+    color: brown;
+    border-bottom: 1px solid brown;
+    padding-bottom: 0.5rem;
+}
+
+header .menu{
+    display: none;
+    color: white;
+}
+
+
+
+/* ......................................................home............................................................. */
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 90vh;
+}
+
+.home .main-contant{
+    /* border: 1px solid rebeccapurple; */
+    width: 90%;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.main-contant h1{
+    font-weight: 600;
+    font-size: 8rem;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.main-contant p{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    color: gray;
+    padding-bottom: 5rem;
+}
+
+button{
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 4rem;
+    border: none;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0 10px wheat;
+}
+
+
+
+
+
+ /* ................................................Our Approach................................................................ */ 
+
+.Approach{
+   /* text-align: center; */
+   background-color: black;
+   padding-bottom: 20rem;
+}
+
+.Approach .Our{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 10rem;
+    /* margin-top: 5rem; */
+}
+
+.Approach h1 span{
+    color: brown;
+}
+
+.Approach-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 40rem)); /* Display three items in one row */
+    justify-content: center;
+    gap: 5rem;
+    padding: 0 2rem; 
+}
+
+/* .Approach-content .container{
+    border: 1px solid red;
+    width: 35rem;
+} */
+
+.container .content{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .content .icon{
+    padding: 2rem;
+    background-color: brown;
+    border-radius: 2rem;
+    color: white;
+}
+
+.container .content .icon i{
+    font-size: 4rem;
+}
+
+.container .content h2{
+    font-size: 12rem;
+    color: gray;
+}
+
+.container h1{
+    font-size: 3rem;
+    color: white;
+}
+
+.container p{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.container p span{
+    color: brown;
+}
+
+
+
+
+
+/* ................................................................Digital Partner....................................................... */
+
+.digital{
+    background-color: black;
+    /* height: 100%; */
+}
+
+.digital .your{
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    padding-bottom: 10rem;
+}
+
+
+
+.digital-content{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(20rem,40rem));
+    justify-content: center;
+    gap: 5rem;
+    padding: 0 2rem;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.digital .your span{
+    color: brown;
+}
+
+.digital-content .partner{
+    /* border: 1px solid red; */
+    border-radius: 1rem;
+    /* width: 40rem; */
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(128, 128, 128, 0.194);
+    cursor: pointer;
+}
+
+.digital-content .partner:hover{
+    background-color: rgba(165, 42, 42, 0.479);
+}
+
+.digital-content .partner h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.digital-content .partner p{
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.684);
+}
+
+.digital-content .partner p span{
+    color:brown;
+}
+
+.digital .btn {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+
+
+/* ................................................................Digital Marketing Service............................................... */
+
+.me{
+    color:brown;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+
+.digital .marketing{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem,40rem));
+    justify-content: center;
+    gap: 5rem;
+}
+
+.digital .marketing .service{
+    /* border: 1px solid rebeccapurple; */
+    /* width: 40rem; */
+    /* color: white; */
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.marketing .service i{
+    font-size: 4rem;
+    padding-right: 1rem;
+    color: gray;
+}
+
+.marketing .service p{
+    font-size: 3rem;
+    color: white;
+}
+
+.hey{
+    background-color: brown;
+}
+
+
+
+ /* ....................................................Connect with us......................................................... --> */
+ .connect{
+    background-color: black;
+    /* border: 1px solid red; */
+    padding: 4rem 0;
+ }
+
+.connect .us{
+    padding: 1rem;
+    /* border: 1px solid red; */
+    margin: 5rem;
+    text-align: center;
+}
+
+.connect .us h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.connect .us h1 span{
+    color: brown;
+}
+
+.connect .us p{
+    line-height: 1.5;
+    font-size: 2rem;
+    color: gray;
+}
+
+.connect .call{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,minmax(20rem,40rem));
+    justify-content: center;
+    gap: 5rem;
+    margin: 0 1rem;
+}
+
+.connect .call .growth{
+    /* border: 1px solid red; */
+    background-color: rgba(165, 42, 42, 0.783);
+    /* width: 40rem; */
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    /* margin-top: 5rem; */
+}
+
+.connect .call .growth:hover{
+    background-color: rgba(128, 128, 128, 0.194);
+}
+
+.connect .call .growth i{
+    font-size: 4rem;
+    padding-right: 1rem;
+    color: gray;
+    color: white;
+}
+
+.connect .call .growth p{
+    font-size: 2rem;
+    color: white;
+}
+
+.connect .btn {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 5rem;
+}
+
+
+
+
+
+ /* .....................................................Client review....................................................................  */
+.client{
+    background-color: black;
+    padding: 4rem 0;
+}
+
+.client .review {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 60rem));
+    justify-content: center;
+    gap: 5rem;
+    /* border: 1px solid rgb(42, 165, 58); */
+    margin: 2rem 1rem;
+    /* padding-bottom: 5rem; */
+}
+
+.client .says{
+    text-align: center;
+    font-size: 5rem;
+    padding: 2rem 0;
+    color: white;
+}
+
+.client .says span{
+    color: brown;
+}
+
+.client .review .oppinion{
+    border: 1px solid gray;
+    border-radius: 2rem;
+    padding: 2rem;
+    /* width: 50rem; */
+}
+
+.client .review .oppinion .star{
+    color: gold;
+    padding-bottom: 1rem;
+    font-size: 2rem
+}
+
+.client .review .oppinion p{
+    font-size: 2rem;
+    color: gray;
+}
+
+.client .review .oppinion .info{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client .review .oppinion .info .about{
+    /* border: 1px solid red; */
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.client .review .oppinion .info .about img{
+    /* border: 1px solid red; */
+    width: 7rem;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
+
+.info .about h1{
+    font-size: 2.5rem;
+    color: white;
+}
+
+
+
+
+ /* .....................................................Company details............................................................. */
+
+
+.company-details{
+    padding: 5rem;
+    background-color: brown;
+}
+
+.company-details .details {
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Four rows with equal height */
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* .company-details .details .item-second,
+.company-details .details .item-third {
+    max-width:30rem;
+} */
+/* .company-details .details .menu {
+    min-width: 20%;
+} */
+
+
+
+
+
+
+
+.company-details .details .about{
+    /* border: 1px solid red; */
+    padding: 2rem;
+    /* width: 50rem; */
+}
+
+.company-details .details .about img{
+    width: 10rem;
+    /* border: 1px solid red; */
+    margin-bottom: 1rem;
+}
+
+.company-details .details .about p{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.company-details .details .about .social-media i{
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+.company-details .details .about .social-media i:hover{
+    background-color: brown;
+}
+
+.details .menu{
+    padding: 2rem;
+    /* border: 1px solid red; */
+    text-align: start;
+    /* width: 30rem; */
+}
+
+.details .menu h1{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+
+.details .menu .menu-details li a{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: white;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.details .menu .menu-details li i{
+    font-size: 1.5rem;
+    color: white;
+    padding-right: 1.5rem;
+}
+
+.details .menu .menu-details li a:hover{
+    color: rgb(244, 10, 10);
+}
+
+
+
+.details .menu .menu-address li{
+    line-height: 2;
+}
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 11, 11); 
+    border-radius: 5px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: gray; 
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none; 
+  }
+  
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 1150px){
+    .company-details .details {
+        grid-template-columns: repeat(2,1fr); 
+    }
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px){
+    .navbar{
+        border: 1px solid red;
+    }
+
+    header{
+        position: sticky;
+        padding: 0 5rem;
+    }
+
+    .navbar{
+        position: absolute;
+        background-color: brown;
+        top: 100%;
+        right: 0;
+        height: 80vh;
+        width: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar .navbar-list{
+        flex-direction: column;
+        align-items: center;
+        top: 10%;
+        gap: 5rem;
+    }
+
+    header .menu{
+        display: inline-block;
+        font-size: 2.5rem;
+        border: 1px solid white;
+        padding: 0.5rem;
+    }
+
+    .fa-times{
+        font-size: 3rem;
+    }
+    
+    
+
+
+
+
+
+    /* ............................................................home.................................................. */
+    .main-contant h1{
+        font-size: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    .main-contant p{
+        padding-bottom: 5rem;
+    }
+
+     /* ............................................................Our Approach.................................................. */
+
+    .Approach-content {
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 35rem));
+        gap: 3rem; /* Display three items in one row */
+    }
+
+
+    /* ............................................................Partner....................................................... */
+
+    .digital-content{
+        grid-template-columns: repeat(auto-fill,minmax(20rem,40rem));
+        gap: 3rem;
+    }
+
+    /* ............................................................Digital Marketing Service.................................................. */
+
+    
+
+    .digital .marketing{
+        grid-template-columns: repeat(auto-fill, minmax(20rem,40rem));
+        gap: 1rem;
+    }
+
+    .connect .call{
+        grid-template-columns: repeat(auto-fill,minmax(20rem,40rem));
+        gap: 2rem;
+    }
+
+    
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 405px){
+    .main-contant h1{
+        font-size: 4rem;
+    }
+
+    /* .home{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        height: 100vh;
+    }
+
+    .home .main-contant{
+        position: relative;
+        top: 20%;
+    } */
+
+    .main-contant p{
+        padding: 2rem 0;
+        font-size: 2rem;
+    }
+
+    
+}
+
+@media screen and (max-width: 650px){
+    .company-details .details{
+        justify-content: center;
+    }
+
+    .company-details .details {
+        grid-template-columns: repeat(1,1fr); /* Four rows with equal height */
+    }
+}

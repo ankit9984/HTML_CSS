@@ -1,0 +1,752 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.5s linear;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* background-color: black; */
+    /* height: 500rem; */
+    /* background-image: linear-gradient(to top, #000000 60%, #a52a2a); */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    background-color: brown;
+    height: 10rem;
+    /* box-shadow: 5px 5px 5px rgba(210, 48, 48, 0.3); */
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+
+
+header .logo{
+    width: 10rem;
+    height: 7rem;
+    /* border: 1px solid red; */
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 70%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.navbar .navbar-list{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 40%;
+}
+
+.navbar-list li a{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.navbar-list li a:hover{
+    color: rgb(240, 13, 13);
+    border-bottom: 1px solid #f00606;
+    padding-bottom: 0.5rem;
+}
+
+header .menu{
+    display: none;
+    color: white;
+}
+
+
+
+ /* ..........................................................About Us.................................................*/
+
+.about{
+    background-image: linear-gradient(to top, #000000 60%, #a52a2a);
+    /* height: min-content; */
+    padding-bottom: 5rem;
+}
+
+.about .about-us{
+    font-size: 10rem;
+    text-align: center;
+    padding: 5rem 0;
+    color: white;
+}
+
+.about .details{
+    /* background-color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 5px solid red; */
+}
+
+.about .details .boosts{
+    /* border: 1px solid rgb(57, 27, 206); */
+    max-width:60rem;
+    padding: 2rem;
+    flex: 1 1 45rem;
+}
+
+.about .details .boosts h1{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.about .details .boosts h1 span{
+    color: brown;
+}
+
+.details .boosts p{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: gray;
+}
+
+.about .details .gif{
+    /* border: 1px solid rgb(0, 255, 68); */
+    max-width: 60rem;
+    text-align: center;
+    flex: 1 1 45rem;
+}
+
+.about .details .gif img{
+    border-radius: 2rem;
+}
+
+
+
+
+
+
+
+button{
+    font-size: 2rem;
+    padding: 1.5rem 2.5rem;
+    border-radius: 5rem;
+    background-color: brown;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin: 2rem 0;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    border-color: brown;
+}
+
+
+
+
+
+
+
+/* ..........................................................Fresh Ideas.................................................*/
+
+.idea{
+    background-color: black;
+}
+
+.idea .headline{
+    /* border: 1px solid red; */
+    text-align: center;
+    padding: 2.5rem 0;
+    /* background-color: black; */
+}
+
+.idea .headline h2{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: gray;
+}
+
+.idea .headline h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.idea .headline h1 span{
+    color: brown;
+}
+
+.idea .business{
+    /* border: 1px solid rgb(34, 0, 255); */
+    display: grid;
+    grid-template-columns: repeat(3,minmax(20rem,40rem));
+    justify-content: space-evenly;
+    gap: 4rem;
+    padding: 2rem;
+}
+
+.idea .business .creative{
+    /* border: 1px solid rebeccapurple; */
+    /* width: 45rem; */
+    padding: 2rem;
+}
+
+.idea .business .creative i{
+    padding-bottom: 1rem;
+}
+
+.idea .business .creative h1{
+    padding-bottom: 1rem;
+}
+
+.idea .business .creative i{
+    font-size: 5rem;
+    color: brown;
+}
+
+.idea .business .creative h1{
+    font-size: 3.5rem;
+    color: white;
+}
+
+.idea .business .creative p{
+    font-size: 2rem;
+    color: gray;
+}
+
+
+
+
+
+/* .........................................................Our Story.........................................................*/
+
+.story{
+    /* border: 2px solid rebeccapurple; */
+    background-color: #000000;
+    position: relative;
+    padding: 5rem 1rem;
+}
+
+.story .our{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.story .our h2{
+    color: gray;
+    font-size: 3rem;
+}
+
+.story .our h1{
+    color: white;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+}
+
+.story .our h1 span{
+    color: brown;
+}
+
+.story .our p{
+    color: gray;
+    font-size: 2.5rem;
+}
+
+.plan{
+    border: 2px solid gray;
+    border-radius: 2rem;
+    height: 120vh;
+    align-self: center;
+    padding: 2rem;
+    display: flex;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    gap: 1rem;
+    position: relative;
+    /* background-color: black; */
+}
+
+.plan .vartical-line{
+    background-color: brown;
+    width: 0.3rem;
+    height: 95%;
+    position: relative;
+}
+
+.plan .vartical-line .one{
+    background-color: brown;
+    width: 1.2rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 5%;
+    left: -70%;
+}
+
+.vartical-line .two{
+    background-color: brown;
+    width: 1.2rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    left: -70%;
+}
+.vartical-line .three{
+    background-color: brown;
+    width: 1.2rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: -70%;
+}
+.vartical-line .four{
+    background-color: brown;
+    width: 1.2rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 65%;
+    left: -70%;
+}
+.vartical-line .five{
+    background-color: brown;
+    width: 1.2rem;
+    height: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 85%;
+    left: -70%;
+}
+
+.plan .content .all-content{
+    /* border: 1px solid red; */
+    /* position: absolute;
+    top: 7%; */
+    padding: 1rem 2rem;
+    width: 90%;
+    height: 15rem;
+    cursor: pointer;
+}
+
+.plan .content .all-content:hover{
+    background-color: brown;
+}
+
+.content .all-content span{
+    border: 1px solid red;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5rem;
+    background-color: brown;
+    color: white;
+    font-size: 2rem;
+    border: 2px solid white;
+}
+
+.content .all-content h1{
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    color: white;
+    padding-top: 1rem;
+}
+
+.content .all-content p{
+    font-size: 2rem;
+    margin-top: 1rem;
+    color: gray;
+}
+
+.plan .content .content-one{
+    position: absolute;
+    top: 5%;
+}
+.plan .content .content-two{
+    position: absolute;
+    top: 23%;
+}
+.plan .content .content-three{
+    position: absolute;
+    top: 41%;
+}
+.plan .content .content-four{
+    position: absolute;
+    top: 58%;
+}
+.plan .content .content-five{
+    position: absolute;
+    top: 77%;
+}
+
+
+
+/* ..........................................................Save Time.................................................*/
+
+.time{
+    /* border: 1px solid red; */
+    padding: 2rem;
+    background-color: #000000;
+}
+
+.time .save{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.time .save .gif{
+    /* border: 1px solid red; */
+    flex: 1 1 45rem;
+    display: flex;
+    justify-content: center;
+}
+
+.time .save .gif img{
+    /* width: 100%; */
+    border-radius: 2rem;
+}
+
+
+
+.time .save .efforts{
+    /* border: 1px solid red; */
+    /* width: 60rem; */
+    flex: 1 1 45rem;
+}
+
+.time .save .efforts h2{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.time .save .efforts h1{
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.time .save .efforts h1 span{
+    color: brown;
+}
+
+.time .save .efforts .list li .manage{
+    /* border: 1px solid brown; */
+    display: flex;
+}
+
+
+
+
+.time .save .efforts .list li .manage div{
+    /* border: 1px solid green; */
+    display: inline-block;
+    line-height: 1.5;
+    padding: 5px 7px;
+    border-radius: 50%;
+    background-color: brown;
+    outline: none;
+    border: none;
+}
+
+.list li .manage div i{
+    color: white;
+}
+
+.efforts .list li .manage span{
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-left: 1rem;
+    color: white;
+}
+
+.time .save .efforts .list li p{
+    font-size: 2rem;
+    /* border: 1px solid red; */
+    padding-left: 3.5rem;
+    color: gray;
+    padding-bottom: 2rem;
+}
+
+
+
+/* .....................................................Client review....................................................................  */
+.client{
+    background-color: black;
+    padding: 4rem 0;
+}
+
+.client .review {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 60rem));
+    justify-content: center;
+    gap: 5rem;
+    /* border: 1px solid rgb(42, 165, 58); */
+    margin: 2rem 1rem;
+    /* padding-bottom: 5rem; */
+}
+
+.client .says{
+    text-align: center;
+    font-size: 5rem;
+    padding: 2rem 0;
+    color: white;
+}
+
+.client .says span{
+    color: brown;
+}
+
+.client .review .oppinion{
+    border: 1px solid gray;
+    border-radius: 2rem;
+    padding: 2rem;
+    /* width: 50rem; */
+}
+
+.client .review .oppinion .star{
+    color: gold;
+    padding-bottom: 1rem;
+    font-size: 2rem
+}
+
+.client .review .oppinion p{
+    font-size: 2rem;
+    color: gray;
+}
+
+.client .review .oppinion .info{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client .review .oppinion .info .about{
+    /* border: 1px solid red; */
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.client .review .oppinion .info .about img{
+    /* border: 1px solid red; */
+    width: 7rem;
+    margin-right: 2rem;
+    border-radius: 50%;
+}
+
+.info .about h1{
+    font-size: 2.5rem;
+    color: white;
+}
+
+
+
+
+
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 11, 11); 
+    border-radius: 5px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: gray; 
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1050px){
+    /* ..........................................................Fresh Ideas.................................................*/
+    .idea .business{
+        grid-template-columns: repeat(2,minmax(20rem,40rem));
+    }
+
+    /* ............................................................Our Story.................................................... */
+
+    .plan{
+        left: 0;
+        width: 100%;
+    }
+
+    /* ............................................................Save Time.................................................... */
+
+    /* .time .save .efforts h1,h2{
+        text-align: center;
+    } */
+
+    .time .save .efforts h2{
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+
+    .time .save .efforts h1{
+        font-size: 3rem;
+    }
+
+    .time .save .gif img{
+        width: 100%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 955px){
+    .navbar{
+        border: 1px solid red;
+    }
+
+    header{
+        position: sticky;
+        padding: 0 5rem;
+    }
+
+    .navbar{
+        position: absolute;
+        background-color: rgb(239, 6, 6);
+        top: 100%;
+        right: 0;
+        height: 80vh;
+        width: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar .navbar-list{
+        flex-direction: column;
+        align-items: center;
+        top: 10%;
+        gap: 5rem;
+    }
+
+    header .menu{
+        display: inline-block;
+        font-size: 2.5rem;
+        border: 1px solid white;
+        padding: 0.5rem;
+    }
+
+    .fa-times{
+        font-size: 3rem;
+    }
+
+
+     /* ..........................................................About Us.................................................*/
+
+     .about{
+        background-image: linear-gradient(to top, #000000 80%, #a52a2a);
+     }
+
+     .about .about-us{
+        font-size: 7rem;
+        padding-bottom: 10rem;
+     }
+
+
+    .about .details{
+        flex-direction: column-reverse;
+    }
+
+    .about .details .boosts{
+        max-width: none;
+    }
+
+    .about .details .gif{
+        max-width: none;
+        padding-bottom: 5rem;
+    }
+
+    .about .details .gif img{
+        width: 100%;
+    }
+
+    /* ............................................................Fresh Ideas.................................................*/
+    .idea .headline h1{
+        font-size: 3.5rem;
+    }
+
+    /* ............................................................Our Story.................................................... */
+
+    .story .our h1{
+        font-size: 4rem;
+    }
+
+    .story .our p{
+        font-size: 2rem;
+    }
+
+    /* ............................................................Save Time.................................................... */
+
+    .time .save .efforts h1,h2{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 750px){
+
+    /* ..........................................................Fresh Ideas.................................................*/
+    .idea .business{
+        grid-template-columns: repeat(1,minmax(20rem,1fr));
+    }
+
+    .btn{
+        text-align: center;
+    }
+}

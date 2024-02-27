@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.5s linear;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* background-color: black; */
+    /* height: 500rem; */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    background-color: black;
+    height: 10rem;
+    /* border: 1px solid white; */
+    box-shadow: 5px 5px 5px rgba(210, 48, 48, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+
+
+header .logo{
+    width: 10rem;
+    height: 7rem;
+    /* border: 1px solid red; */
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 70%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.navbar .navbar-list{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 40%;
+}
+
+.navbar-list li a{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.navbar-list li a:hover{
+    color: brown;
+    border-bottom: 1px solid brown;
+    padding-bottom: 0.5rem;
+}
+
+header .menu{
+    display: none;
+    color: white;
+}
+
+
+
+
+
+.blog{
+    border: 1px solid rgba(255, 0, 0, 0.184);
+    background: rgb(13,13,14);
+    background: linear-gradient(40deg, rgba(13,13,14,1) 8%, rgba(224,17,38,1) 25%, rgba(60,15,222,1) 94%);
+}
+
+.blog .ankit{
+    margin: 10rem 0;
+    font-size: 10rem;
+    text-align: center;
+    color: white;
+}
+
+
+.yadav{
+    padding-top: 5rem;
+    /* border: 1px solid red; */
+    text-align: center;
+    background-color: black;
+}
+
+.yadav .search{
+    /* border: 1px solid green; */
+}
+
+.search input{
+    width: 50%;
+    padding: 1.5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+}
+
+.yadav .details{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,minmax(20rem,40rem));
+    gap: 2rem;
+    justify-content: center;
+    margin: 5rem 2rem 0 2rem;
+}
+
+.details .content{
+    /* border: 1px solid greenyellow; */
+    /* width: 40rem; */
+    height: 40rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px white;
+}
+
+.details .content img{
+    width: 100%;
+    height: 50%;
+}
+
+.content .hey{
+    /* border: 1px solid gold; */
+    height: 50%;
+}
+
+.content .hey h1{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.hey p{
+    font-size: 2rem;
+    color: gray;
+}
+
+button{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: gold;
+    color: white;
+}
+
+
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 11, 11); 
+    border-radius: 5px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: gray; 
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px){
+    .yadav .details{
+    grid-template-columns: repeat(2,minmax(20rem,40rem));
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px){
+    .navbar{
+        border: 1px solid red;
+    }
+
+    header{
+        position: sticky;
+        padding: 0 5rem;
+    }
+
+    .navbar{
+        position: absolute;
+        background-color: brown;
+        top: 100%;
+        right: 0;
+        height: 80vh;
+        width: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar .navbar-list{
+        flex-direction: column;
+        align-items: center;
+        top: 10%;
+        gap: 5rem;
+    }
+
+    header .menu{
+        display: inline-block;
+        font-size: 2.5rem;
+        border: 1px solid white;
+        padding: 0.5rem;
+    }
+
+    .fa-times{
+        font-size: 3rem;
+    }
+}
+
+
+@media screen and (max-width: 650px){
+    .yadav .details{
+    grid-template-columns: repeat(1,minmax(20rem,40rem));
+    }
+
+    .search input{
+        width: 70%;
+    }
+
+    .blog .ankit{
+        font-size: 7rem;
+    }
+}

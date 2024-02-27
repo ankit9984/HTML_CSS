@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="Ankit">
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../web/web.html">Servies</a></li>
+                <li><a href="../about/about.html">About</a></li>
+                <li><a href="../blog/blog.html">Blog</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <i class="fa-solid fa-bars"></i>
+            <!-- <i class="fa-solid fa-xmark"></i> -->
+        </div>
+    </header>
+
+    <!-- ...................................................................Company Deatails......................................... -->
+
+    <section class="details">
+        <h1 class="us" data-aos="fade-up"
+        data-aos-duration="1000">CONTACT US</h1>
+        <div class="contact" data-aos="fade-up"
+        data-aos-duration="1000">
+            <h1>Find The <span>Perfect Solution</span> For Your Business</h1>
+            <p>We have world-class, flexible support via live chat, email, and phone. We guarantee that you’ll be able to have any issue resolved within 24 hours.</p>
+        </div>
+        <div class="ankit" data-aos="fade-up"
+        data-aos-duration="1000">
+            <div class="a" data-aos="fade-up"
+            data-aos-duration="1000">
+                <i class="fa-solid fa-phone-volume"></i>
+                <h1>Phone Number</h1>
+                <span>+91 1234567899</span>
+            </div>
+            <div class="a" data-aos="fade-up"
+            data-aos-duration="1000">
+                <i class="fa-solid fa-envelope"></i>
+                <h1>Email Address</h1>
+                <span>connect@crezvatic.com</span>
+            </div>
+            <div class="a d" data-aos="fade-up"
+            data-aos-duration="1000">
+                <i class="fa-solid fa-location-dot"></i>
+                <h1>Office Address</h1>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, accusamus soluta! Similique aliquid maxime repellendus?</span>
+            </div>
+        </div>
+    </section>
+
+     <!-- ...................................................................Registration Form ......................................... -->
+    
+   <section class="yadav">
+    <h1 class="touch">Get In <span>Touch</span></h1>
+    <section class="container">
+        <h1>Registration Form</h1>
+        <form action="">
+            <div class="name-input">
+                <div class="first">
+                    <label for="firstName" class="first-Name">First Name</label>
+                    <input type="text" placeholder="First Name" name="firstName" id="firstName">
+                    <p class="pargraph"></p>
+                    <span class="error-message"></span>
+                </div>
+                <div class="last">
+                    <label for="lastName" class="last-Name">last Name</label>
+                    <input type="text" placeholder="last Name" name="lastName" id="lastName">
+                    <span class="error-message"></span>
+                </div>
+            </div>
+
+            <div class="Number">
+                <label for="Number">Mobile Number</label>
+                <div class="country">
+                    <input type="text" placeholder="Mobile Number" name="mobileNumber" id="Number">
+                </div>
+            </div>
+
+            <h1 class="or">OR</h1>
+
+            <div class="email">
+                <label for="email">Email Address</label>
+                <div class="country">
+                    <input type="text" placeholder="Email Address" name="emailaddress" id="email">
+                </div>
+            </div>
+
+            <div class="name-input">
+                <div class="first pass">
+                    <label for="Password" class="first-Name">Password</label>
+                    <input type="text" placeholder="Password" name="Password" id="Password">
+                </div>
+                <div class="last conf-pass">
+                    <label for="confirmpassword" class="last-Name">Confirm Password</label>
+                    <input type="text" placeholder="Confirm Password" name="confirmpassword" id="confirmpassword">
+                </div>
+            </div>
+
+           <div class="btn">
+            <span>if your have Account <a href="#">log in</a></span>
+            <button class="button">Submit</button>
+           </div>
+        </form>
+    </section>
+   </section>
+   
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        const menu = document.querySelector('.fa-bars');
+        const navbar = document.querySelector('.navbar');
+
+        menu.addEventListener('click',()=>{
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('active');
+        })
+
+        window.addEventListener("scroll", function() {
+            var scrollPosition = window.scrollY;
+            if (scrollPosition >= 200) {
+                document.querySelector("header").style.backgroundColor = "black";
+                document.querySelector("header").style.boxShadow = "5px 5px 10px red";
+            } else {
+                document.querySelector("header").style.backgroundColor = "brown";
+                document.querySelector("header").style.boxShadow = "none";
+            }
+        });
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>

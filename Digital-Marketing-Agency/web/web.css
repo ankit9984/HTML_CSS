@@ -1,0 +1,883 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.5s linear;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* background-color: black; */
+    /* height: 500rem; */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+    background-color: black;
+    height: 10rem;
+    /* border: 1px solid white; */
+    box-shadow: 5px 5px 5px rgba(210, 48, 48, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 900;
+}
+
+
+
+header .logo{
+    width: 10rem;
+    height: 7rem;
+    /* border: 1px solid red; */
+}
+
+header .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    width: 70%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.navbar .navbar-list{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 40%;
+}
+
+.navbar-list li a{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.navbar-list li a:hover{
+    color: brown;
+    border-bottom: 1px solid brown;
+    padding-bottom: 0.5rem;
+}
+
+header .menu{
+    display: none;
+    color: white;
+}
+
+
+
+
+/* ..............................................................website design........................................... */
+
+.design{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: black;
+}
+
+.design .container{
+    /* border: 10px solid red; */
+    display: flex;justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    width: 110rem;
+    height: 80%;
+    padding: 2rem;
+    background-color: brown;
+    margin: 0 1rem;
+}
+
+.design .container .content{
+    /* border: 5px solid green; */
+    text-align: center;
+}
+
+.design .container .content h1{
+    font-size: 6rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.design .container .content p{
+    font-size: 3rem;
+    padding-bottom: 5rem;
+    color: white;
+}
+
+button{
+    padding: 1.5rem 2.5rem; 
+    font-size: 2rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0 0 50px black;
+}
+
+.btn-1{
+    /* border: 1px solid red; */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-1 button{
+    background-color: brown;
+    color: black;
+}
+
+.btn-1 button:hover{
+    background-color: gold;
+    color: white;
+    box-shadow: 0 0 50px gold;
+}
+
+
+
+/* ..................................................................Service.................................................... */
+
+.service{
+    /* border: 1px solid red; */
+    background-color: black;
+    padding-bottom: 5rem;
+}
+
+.service .our{
+    padding-top: 2rem;
+    font-size: 5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.service .list{
+    /* border: 5px solid greenyellow; */
+    display: grid;
+    grid-template-columns: repeat(3,minmax(20rem,40rem));
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem 1rem;
+}
+
+.service .list .web{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid gray;
+    /* width: 35rem; */
+    height: 15rem;
+    padding: 2rem;
+    height: 20rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.service .list .web:hover{
+    background-color: brown;
+    transform: translateY(-10px);
+}
+
+.service .list .web i{
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+.service .list .web h1{
+    font-size: 2.2rem;
+    color: white;
+}
+
+.service .list .web h1 span{
+    color: rgb(228, 15, 15);
+}
+
+.service .btn{
+    text-align: center;
+    padding-top: 5rem
+}
+
+.service .btn button:hover{
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0 10px wheat;
+    color: white;
+}
+
+
+
+/* ....................................................................Benefit.................................................... */
+
+.service{
+    /* border: 1px solid red; */
+    background-color: black;
+    padding-bottom: 5rem;
+}
+
+.service .our{
+    /* border: 1px solid red; */
+    padding-top: 2rem;
+    font-size: 6rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.service .list-b{
+    /* border: 5px solid greenyellow; */
+    display: grid;
+    grid-template-columns: repeat(4,minmax(20rem,30rem));
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 2rem 1rem;
+}
+
+.service .list-b .web-b{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid gray;
+    /* width: 35rem; */
+    height: 15rem;
+    padding: 2rem;
+    height: 20rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.service .list-b .web-b:hover{
+    background-color: brown;
+    transform: translateY(-10px);
+}
+
+.service .list-b .web-b i{
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    color: gold;
+}
+
+.service .list-b .web-b h1{
+    font-size: 2rem;
+    color: white;
+}
+
+.service .list-b .web-b h1 span{
+    color: rgb(228, 15, 15);
+}
+
+.service .btn{
+    text-align: center;
+    padding-top: 5rem
+}
+
+.service .btn button:hover{
+    background-color: gold;
+    color: black;
+    box-shadow: 0 0 10px wheat;
+    color: white;
+}
+
+/* ......................................................................Our Capabilities................................................ */
+
+.talent{
+    /* border: 1px solid red; */
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: black;
+}
+
+.talent .our{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+    padding-bottom: 5rem;
+}
+
+.talent .gif{
+    /* border: 5px solid red; */
+    /* flex: 1 1 45rem; */
+    text-align: center;
+}
+
+.talent .gif img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.talent .ankit{
+    /* border: 10px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+ .content{
+    /* border: 5px solid red; */
+    width: 75rem;
+    padding: 0 2rem;
+    /* flex: 1 1 70rem; */
+}
+
+ .content .tech{
+    padding-bottom: 2rem;
+}
+
+ .content h1{
+    font-size: 3.5rem;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+
+ .content h1 span{
+    color: brown;
+}
+
+ .content p{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: gray;
+}
+
+ .content h2{
+    font-size: 2.5rem;
+    color: white;
+    padding-bottom: 1.5rem;
+}
+
+ .content .provides{
+    /* border: 1px solid blue; */
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(5rem,25rem));
+    gap: 2rem; */
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    grid-gap: 10px; 
+    margin-top: 1rem;
+    padding-bottom: 2.5rem;
+}
+
+.process:nth-child(1),
+.process:nth-child(2) {
+    grid-row: 1; /* Place the first two items in the first row */
+}
+
+.process:nth-child(3),
+.process:nth-child(4),
+.process:nth-child(5) {
+    grid-row: 2; /* Place items 3 to 5 in the second row */
+}
+
+.process:nth-child(6) {
+    grid-row: 3; /* Place the last item in the third row */
+}
+
+ .content .provides .process{
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: max-content; */
+    padding: 0 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+ .content .provides .process:hover{
+    background-color: brown;
+}
+
+ .content .provides .process i{
+    font-size: 2rem;
+    color: rgb(23, 234, 23);
+}
+
+ .content .provides .process p{
+    /* font-size: 2.5rem; */
+    position: relative;
+    top: 1rem;
+    padding-left: 1rem;
+    color: white;
+}
+
+
+
+ .content .logo{
+    /* border: 1px solid red; */
+    display: flex;
+    /* justify-content: center; */
+    gap: 2rem;
+}
+
+ .content .logo .logo-dp{
+    width: 7rem; /* 32px */
+    height: 7rem; /* 32px */
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    border: 2px solid gold;
+    cursor: pointer;
+    /* font-size: 2.5rem; */
+
+}
+
+
+ .content .logo .Ae {
+    /* font-size: 2.5rem; */
+    background-color: #f368e0b0;
+    border: 2px solid #D980FA;
+}
+
+ .content .logo .Ae p{
+    color: #b715f2;
+    font-size: 4rem;
+    font-size: 700;
+}
+
+ .content .logo .Ai {
+    /* font-size: 2.5rem; */
+    background-color: rgb(169, 153, 60);
+    font-weight: 700;
+}
+ .content .logo .Ai p{
+    color: gold;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+ .content .logo .Xd{
+    background-color: #9d32b2;
+    border: 2px solid #e056fd;
+}
+ .content .logo .Xd p{
+    color: #e056fd;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+ .content .logo .Ps{
+    background-color: #3163c1;
+    border: 2px solid #0652DD;
+}
+ .content .logo .Ps p{
+    color: #0652DD;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+/* .yadav .content .provides .process{
+    width: max-content;
+} */
+
+.content .logo .reactnative, .content .logo .android, .content .logo .fluter, .content .logo .swift, .content .logo .ionic {
+    border: none;
+}
+
+.content .logo .ionic img{
+   padding-left: 15rem;
+}
+
+
+.content .logo .js1, .content .logo .js2, .content .logo .js3, .content .logo .js4{
+    border: none;
+    margin-left: 2rem;
+}
+
+
+/* ...............................................................Customer Care.............................................*/
+
+
+.helpline{
+    /* border: 1px solid red; */
+    padding: 5rem;
+    background-color: black;
+}
+
+.helpline h1{
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.helpline h1 span{
+    color: brown;
+}
+
+.helpline .support{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,minmax(20rem,45rem));
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 3.5rem;
+}
+
+.helpline .support .team{
+    border: 2px solid gray;
+    border-radius: 2rem;
+    /* width: 35rem; */
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.helpline .support .team:hover{
+    background-color: brown;
+    transform: translateY(-10px);
+    border-color: brown;
+}
+
+.support .team i{
+    color: rgb(241, 11, 11);
+    font-size: 3.5rem;
+    padding-bottom: 1rem;
+}
+
+.helpline .team p{
+    font-size: 2rem;
+    color: white;
+}
+
+
+
+
+/* Target the scrollbar */
+::-webkit-scrollbar {
+    width: 5px; 
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(243, 11, 11); 
+    border-radius: 5px; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: gray; 
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: #f1f1f1; 
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none; 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1250px){
+
+    /* ......................................................................Our Capabilities................................................ */
+    .talent .gif{
+        flex: 1 1 45rem;
+    }
+
+    .talent .gif img{
+        width: 100%;
+    }
+
+    .talent .ankit .content{
+        flex: 1 1 45rem;
+    }
+
+    .process:nth-child(1),
+    .process:nth-child(2) {
+    grid-row: 1; /* Place the first two items in the first row */
+    }
+
+    .process:nth-child(3),
+    .process:nth-child(4){
+        grid-row: 2; /* Place items 3 to 5 in the second row */
+    }
+
+    .process:nth-child(6),
+    .process:nth-child(5) {
+        grid-row: 3; /* Place the last item in the third row */
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 950px){
+    .navbar{
+        border: 1px solid red;
+    }
+
+    header{
+        position: sticky;
+        padding: 0 5rem;
+    }
+
+    .navbar{
+        position: absolute;
+        background-color: brown;
+        top: 100%;
+        right: 0;
+        height: 80vh;
+        width: 50%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar .navbar-list{
+        flex-direction: column;
+        align-items: center;
+        top: 10%;
+        gap: 5rem;
+    }
+
+    header .menu{
+        display: inline-block;
+        font-size: 2.5rem;
+        border: 1px solid white;
+        padding: 0.5rem;
+    }
+
+    .fa-times{
+        font-size: 3rem;
+    }
+
+    /* ..............................................................website design........................................... */
+
+    .design .container .content h1{
+        font-size: 4rem;
+    }
+
+    .design .container .content p{
+        font-size: 2.5rem;
+    }
+
+    /* ..............................................................Services........................................... */
+
+
+    .service .list{
+        grid-template-columns: repeat(2,minmax(20rem,40rem));
+    }
+
+    /* ....................................................................Benefit.................................................... */
+
+    .service .list-b{
+        grid-template-columns: repeat(2,minmax(20rem,30rem));
+    }
+
+
+    /* ......................................................................Our Capabilities................................................ */
+
+
+    .process:nth-child(1),
+    .process:nth-child(2),
+    .process:nth-child(3){
+        grid-row: 1;
+    }
+
+    .process:nth-child(4),
+    .process:nth-child(5),
+    .process:nth-child(6){
+        grid-row: 2;
+    }
+
+     .content .provides .process p{
+        font-size: 2rem;
+    }
+
+     /* ......................................................................Our Capabilities-2................................................ */
+
+    .talent .yadav{
+        flex-direction: column-reverse;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    /* ...............................................................Customer Care.............................................*/
+
+    .helpline .support{
+        grid-template-columns: repeat(auto-fill,minmax(20rem,45rem));
+    }
+
+    .helpline h1{
+        font-size: 3.5rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 650px){
+
+    /* ..............................................................Services........................................... */
+
+    .service .list{
+        grid-template-columns: repeat(auto-fill,minmax(20rem,40rem));
+    }
+
+    .service .our{
+        font-size: 3rem;
+    }
+
+    /* ....................................................................Benefit.................................................... */
+
+    .service .list-b{
+        grid-template-columns: repeat(auto-fill,minmax(20rem,40rem));
+    }
+
+    /* ......................................................................Our Capabilities................................................ */
+
+    .talent .ankit .content h1{
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+    
+
+    .talent .ankit .content h2{
+        text-align: center;
+    }
+
+    .talent .ankit .content .provides{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 2rem;
+    }
+
+
+    .talent .ankit .content .provides .process p{
+        font-size: 2.5rem;
+    }
+
+    .talent .ankit .content .provides .process i{
+        font-size: 1.5rem;
+    }
+
+    .process:nth-child(1){
+        grid-row: 1;
+    }
+    .process:nth-child(2){
+        grid-row: 2;
+    }
+    .process:nth-child(3){
+        grid-row: 3;
+    }
+    .process:nth-child(4){
+        grid-row: 4;
+    }
+    .process:nth-child(5){
+        grid-row: 5;
+    }
+    .process:nth-child(6){
+        grid-row: 6;
+    }
+    
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+    .design{
+        height: 60vh;
+    }
+
+    .design .container {
+        width: 100%; /* Set the width to 100% to occupy the full screen width */
+        height: auto; /* Allow the container to adjust its height based on content */
+        margin: 0 1rem; /* Remove margin on the sides to occupy the full screen width */
+        padding: 1rem; /* Add some padding to the container */
+    }
+    
+    .design .container .content {
+        padding: 1rem; /* Add some padding to the content for better readability */
+    }
+    
+    .design .container .content h1 {
+        font-size: 3rem; /* Reduce the font size for better display on smaller screens */
+    }
+    
+    .design .container .content p {
+        font-size: 2rem; /* Reduce the font size for better display on smaller screens */
+    }
+
+    /* .........................................................Our Capabilities...................................................... */
+
+    .talent .our{
+        font-size: 3rem;
+    }
+
+    .content .logo{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* ......................................................................Our Capabilities-2................................................ */
+
+    .talent .yadav .gif img{
+        height: 90%;
+    }
+}
